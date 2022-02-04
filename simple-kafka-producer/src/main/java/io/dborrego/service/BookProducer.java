@@ -16,7 +16,7 @@ public class BookProducer {
     // Pages contains the seconds of the msg is sended
     private static final String BOOK_FORMAT_STRING = "Book[ title: {0}, Pages: {1} ]";
 
-    @Outgoing("words-out")
+    @Outgoing("books-new")
     public Multi<String> generate() {
         return Multi.createFrom().ticks().every(Duration.ofSeconds(1)).map(generateBook);
     }
