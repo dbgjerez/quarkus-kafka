@@ -1,4 +1,4 @@
-# json-kafka-producer
+# json-kafka-consumer
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
